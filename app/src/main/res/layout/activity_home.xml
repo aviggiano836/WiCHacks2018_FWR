@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ariel.udio.Home">
+
+    <TextView
+        android:id="@+id/Title_Udio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="123dp"
+        android:text="UDIO"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/Store_Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Store_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="67dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="cursive"
+        android:text="Wegmans"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Input"
+        app:layout_constraintStart_toStartOf="@+id/Title_Udio"
+        app:layout_constraintTop_toBottomOf="@+id/Title_Udio" />
+
+    <EditText
+        android:id="@+id/inputCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="154dp"
+        android:ems="10"
+        android:inputType="text|number"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrectCode" />
+
+    <TextView
+        android:id="@+id/Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Enter Store Code"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Store_Name" />
+
+    <Button
+        android:id="@+id/enterCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="89dp"
+        android:text="Enter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCode" />
+
+    <TextView
+        android:id="@+id/incorrectCode"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="249dp"
+        android:text="Incorrect Code"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/inputCode"
+        app:layout_constraintEnd_toEndOf="@+id/Input"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
